@@ -16,6 +16,29 @@ $ cmake ..
 $ make
 ```
 
+Building a binary package
+=========================
+
+```shell
+$ cd gSDK/
+$ mkdir build && cd build
+$ cmake ..
+$ cmake --build . --target package
+```
+
+Package is built with CPack and is either a `.deb` or a `.rpm` depending on the current distribution. It can be installed using usual tools, `apt install ...` or `dnf install ...`.
+
+Using a binary package
+======================
+
+In the `CMakeLists.txt` of your program, add the required commands:
+
+```cmake
+find_package(gSDK)
+add_executable(my_program my_program.cpp)
+target_link_libraries(my_program PRIVATE gSDK)
+```
+
 Hardware Setup
 =========
 

@@ -1,5 +1,9 @@
 {
     "cmake.configureOnOpen": true,
+    "cmake.installPrefix": "/usr/",
+    "cmake.configureSettings" : {
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo"
+    },
     "files.associations": {
         "vector": "cpp",
         "*.tcc": "cpp",
