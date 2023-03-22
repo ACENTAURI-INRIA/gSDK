@@ -100,23 +100,23 @@ else()
         DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/gSDK/mavlink/v2.0 
     )
     install(DIRECTORY src/mavlink/include/mavlink/v2.0/ardupilotmega 
-        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/gSDK/mavlink/v2.0/ardupilotmega
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/gSDK/mavlink/v2.0/
         FILES_MATCHING PATTERN "*.h"
     )
     install(DIRECTORY src/mavlink/include/mavlink/v2.0/common
-        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/gSDK/mavlink/v2.0/common
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/gSDK/mavlink/v2.0/
         FILES_MATCHING PATTERN "*.h"
     )
     install(DIRECTORY src/mavlink/include/mavlink/v2.0/minimal
-        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/gSDK/mavlink/v2.0/minimal
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/gSDK/mavlink/v2.0/
         FILES_MATCHING PATTERN "*.h"
     )
     install(DIRECTORY src/mavlink/include/mavlink/v2.0/uAvionix
-        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/gSDK/mavlink/v2.0/uAvionix
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/gSDK/mavlink/v2.0/
         FILES_MATCHING PATTERN "*.h"
     )
     install(DIRECTORY src/mavlink/include/mavlink/v2.0/icarous
-        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/gSDK/mavlink/v2.0/icarous
+        DESTINATION ${CMAKE_INSTALL_INCLUDEDIR}/gSDK/mavlink/v2.0/
         FILES_MATCHING PATTERN "*.h"
     )
 endif()
